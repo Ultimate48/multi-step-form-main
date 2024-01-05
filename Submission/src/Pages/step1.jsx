@@ -55,7 +55,7 @@ function Step({step, title, selected=false, isMobile}){
 function Banner({isMobile}){
 
     const image = isMobile ? 'bg-sidebar-mobile.svg' : 'bg-sidebar-desktop.svg'
-    const imagePath = `../../public/${image}`
+    const imagePath = `../${image}`
 
     return(
     <section className='flex items-center md:w-[274px] relative'>

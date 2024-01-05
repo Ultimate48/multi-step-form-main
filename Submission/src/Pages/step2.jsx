@@ -29,7 +29,7 @@ function Step({step, title, selected=false, isMobile}){
 function Banner({isMobile}){
 
     const image = isMobile ? 'bg-sidebar-mobile.svg' : 'bg-sidebar-desktop.svg'
-    const imagePath = `../../public/${image}`
+    const imagePath = `../${image}`
 
     return(
     <section className='flex items-center md:w-[274px] relative'>
@@ -48,7 +48,7 @@ function Plan({p, prices, isMobile=false}){
 
     const {isMonthly, plan, setPlan} = useContext(FormContext)
 
-    const image = `./../../public/icon-${p}.svg`
+    const image = `../icon-${p}.svg`
     const alt = `icon-${plan}`
 
     const price = isMonthly ? prices['monthly'][p] : prices['yearly'][p]

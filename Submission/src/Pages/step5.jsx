@@ -30,7 +30,7 @@ function Step({step, title, selected=false, isMobile}){
 function Banner({isMobile}){
 
     const image = isMobile ? 'bg-sidebar-mobile.svg' : 'bg-sidebar-desktop.svg'
-    const imagePath = `../../public/${image}`
+    const imagePath = `../${image}`
 
     return(
     <section className='flex items-center md:w-[274px] relative'>
@@ -68,7 +68,7 @@ export default function step5({isMobile}) {
                 </div>
                 <div className='w-[340px] bg-white rounded-lg flex flex-col absolute top-[100px] py-[75px] px-5 justify-center items-center gap-5 shadow-lg'>
                     <div className='w-14'>
-                        <img src = './../../public/icon-thank-you.svg' alt='illustration-summary' />
+                        <img src = '../icon-thank-you.svg' alt='illustration-summary' />
                     </div>
                     <div className='flex flex-col justify-center items-center text-center gap-3 font-[Ubuntu]'>
                         <div className='text-2xl text-marine-blue font-bold'>Thank you!</div>
@@ -83,7 +83,7 @@ export default function step5({isMobile}) {
                 <Banner isMobile={isMobile} />
                 <section className='flex flex-col justify-center font-[Ubuntu] mt-4 w-[660px] px-[104px] py-8 items-center gap-10'>
                     <div className='flex justify-center'>
-                        <img src = './../../public/icon-thank-you.svg' alt='illustration-summary' />
+                        <img src = '../icon-thank-you.svg' alt='illustration-summary' />
                     </div>
                     <div className='flex flex-col justify-center items-center text-center gap-3'>
                         <div className='text-3xl text-marine-blue font-bold'>Thank you!</div>

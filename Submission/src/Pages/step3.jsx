@@ -30,7 +30,7 @@ function Step({step, title, selected=false, isMobile}){
 function Banner({isMobile}){
 
     const image = isMobile ? 'bg-sidebar-mobile.svg' : 'bg-sidebar-desktop.svg'
-    const imagePath = `../../public/${image}`
+    const imagePath = `../${image}`
 
     return(
     <section className='flex items-center md:w-[274px] relative'>
@@ -75,7 +75,7 @@ function AddOn({name, title, addOn, setAddOn, isMobile=false}){
     return (
         <div className={sectionStyles}  onClick={(e) => setAddOn(!addOn)}>
             <div className={tickStyles}>
-                <img src='./../../public/icon-checkmark.svg' alt='icon-online' className='w-3 h-3 '/>
+                <img src='../icon-checkmark.svg' alt='icon-online' className='w-3 h-3 '/>
             </div>
             <div className='flex-1 flex justify-between items-center'>
                 <div>
