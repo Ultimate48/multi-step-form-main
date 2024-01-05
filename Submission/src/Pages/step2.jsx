@@ -167,7 +167,7 @@ export default function step2({isMobile}) {
                             </div>
                         </div>
                     </div>
-                <div className='bg-white absolute bottom-0 w-full p-4'>
+                <div className='bg-white fixed bottom-0 w-full p-4'>
                     <div className='flex justify-between'>
                     <button className='font-bold text-light-gray hover:text-marine-blue'
                         onClick={(e) => navigate('/step1')}>

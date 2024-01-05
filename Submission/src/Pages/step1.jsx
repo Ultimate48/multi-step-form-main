@@ -119,7 +119,7 @@ export default function step1({isMobile}) {
                     <div>
                     </div>
                 </div>
-                <div className='bg-white absolute bottom-0 w-full p-4'>
+                <div className='bg-white fixed bottom-0 w-full p-4'>
                     <div className='flex justify-end'>
                         <button className='bg-marine-blue text-white rounded-md h-10 w-[100px] font-medium hover:bg-purplish-blue' type="submit"
                         onClick={(e) => handleSubmit(e)}>Next Step</button>
