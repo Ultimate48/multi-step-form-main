@@ -90,6 +90,20 @@ export default function step1({isMobile}) {
         email === '' ? setIsEmailFilled(false) : setIsEmailFilled(true)
         phone === '' ? setIsPhoneFilled(false) : setIsPhoneFilled(true)
 
+        //Check email address format using regex
+        const emailRegex = /\S+@\S+\.\S+/
+        if (emailRegex.test(email) === false){
+            alert('Please enter a valid email address')
+            return
+        }
+
+        //check only numbers in phone number
+        const phoneRegex = /^[0-9]+$/
+        if (phoneRegex.test(phone) === false){
+            alert('Please enter a valid phone number')
+            return
+        }
+
         if (name === '' || email === '' || phone === '') 
             return
         else
